@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Mirrora" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorPrimary">#337FDD</item>
+        <item name="colorPrimaryDark">#2C6FBB</item>
+        <item name="colorAccent">#3691F0</item>
+    </style>
+</resources>

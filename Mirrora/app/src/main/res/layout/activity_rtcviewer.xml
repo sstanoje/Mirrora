@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <LinearLayout
+        android:id="@+id/lobbyLayoutId"
+        android:background="@drawable/gradient_background"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/appNameId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waiting for host"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#2C6FBB"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/roomCodeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="26dp"
+            android:fontFamily="monospace"
+            android:text="Room code:"
+            android:textColor="#2C6FBB"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:id="@+id/codeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="50dp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:text="038484"
+            android:textColor="#2C6FBB"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="50dp"/>
+    </LinearLayout>
+
+    <org.webrtc.SurfaceViewRenderer
+        android:id="@+id/rtcRenderer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:keepScreenOn="true" />
+</FrameLayout>
